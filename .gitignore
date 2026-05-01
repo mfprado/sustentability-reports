@@ -1,0 +1,9 @@
+.DS_Store
+*.pdf
+screenshots/
+pdf-extractor.html
+pdf-text-only.html
+pdf-visual.html
+Reporte de Sustentabilidad v1.html
+.claude/
+uploads/*-c02ba35a.jpg
