@@ -445,6 +445,167 @@ footer { background: var(--black); padding: 72px 80px 40px; color: #fff; }
   width: 100%; height: 100%; object-fit: cover; display: block;
 }
 
+/* ── CERTIFICATION STRATEGY ── */
+#certification-strategy { background: var(--white); }
+.cs-summary {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1px; background: var(--border); border: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+.cs-summary-card { background: var(--white); padding: 28px 24px; }
+.cs-summary-num { font-size: 36px; font-weight: 300; line-height: 1; color: var(--black); }
+.cs-summary-num .u { font-size: 14px; color: var(--mid); margin-left: 4px; }
+.cs-summary-lbl {
+  font-size: 11px; color: var(--mid); margin-top: 10px; line-height: 1.5;
+}
+.cs-summary-tag {
+  display: inline-block; font-size: 8px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 4px 8px; border-radius: 2px; margin-bottom: 10px;
+}
+.cs-frameworks {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 48px;
+}
+.cs-fw {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.04em;
+  padding: 8px 14px; border-radius: 24px;
+  background: var(--light); color: var(--black);
+  border: 1px solid var(--border);
+}
+.cs-fw.active {
+  background: var(--green); color: #fff; border-color: var(--green);
+}
+.cs-timeline {
+  background: var(--light);
+  padding: 28px;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+}
+.cs-timeline-head {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  margin-bottom: 14px;
+}
+.cs-years {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  position: relative;
+}
+.cs-year {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.16em;
+  color: var(--mid); text-align: center;
+  padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.cs-year + .cs-year::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 1px; background: var(--border);
+}
+.cs-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.cs-row:last-child { border-bottom: none; }
+.cs-row-label {
+  font-size: 13px; font-weight: 500; color: var(--black);
+  padding-right: 16px;
+}
+.cs-row-meta {
+  display: block; font-size: 10px; color: var(--mid); margin-top: 3px;
+  letter-spacing: 0.04em;
+}
+.cs-track {
+  position: relative; height: 28px;
+  display: grid; grid-template-columns: repeat(5, 1fr);
+}
+.cs-track::before, .cs-track::after, .cs-track-grid {
+  content: ''; position: absolute; top: 0; bottom: 0;
+  width: 1px; background: rgba(0,0,0,0.05);
+}
+.cs-track > span.gridline {
+  border-left: 1px dashed rgba(0,0,0,0.06);
+}
+.cs-bar {
+  position: absolute; top: 6px; height: 16px;
+  border-radius: 2px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 600; color: #fff; letter-spacing: 0.04em;
+  white-space: nowrap; overflow: hidden;
+  cursor: default;
+}
+.cs-bar.project       { background: var(--lavender); }
+.cs-bar.construction  { background: var(--cyan); }
+.cs-bar.certification { background: var(--green); }
+.cs-bar.operation     { background: var(--mid); opacity: 0.4; color: var(--black); }
+.cs-bar.achieved {
+  background: var(--green); color: #fff;
+  box-shadow: 0 0 0 2px rgba(0,184,110,0.25);
+}
+.cs-bar.objective {
+  background: transparent; color: var(--green);
+  border: 1.5px dashed var(--green);
+}
+.cs-legend {
+  display: flex; gap: 18px; flex-wrap: wrap;
+  margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--border);
+}
+.cs-legend-item {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 10px; color: var(--mid); letter-spacing: 0.04em;
+}
+.cs-legend-swatch {
+  width: 14px; height: 8px; border-radius: 1px;
+}
+
+/* ── CLIMATE TRANSITION PLAN ── */
+#climate-plan { background: var(--white); }
+.ctp-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 64px; align-items: start; margin-top: 24px;
+}
+.ctp-intro p {
+  font-size: 14px; line-height: 1.85; color: #444; margin-bottom: 16px;
+}
+.ctp-tag-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
+.ctp-tag {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.06em;
+  padding: 6px 12px; border-radius: 24px;
+  background: var(--light); color: var(--mid);
+  border: 1px solid var(--border);
+}
+.ctp-chart-wrap {
+  background: var(--light); padding: 32px 24px 24px;
+  border-radius: 2px; border: 1px solid var(--border);
+}
+.ctp-chart-svg { width: 100%; height: 280px; display: block; }
+.ctp-chart-legend {
+  display: flex; gap: 20px; flex-wrap: wrap; margin-top: 18px;
+  padding-top: 14px; border-top: 1px solid var(--border);
+}
+.ctp-legend-item {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 10px; color: var(--mid); letter-spacing: 0.06em;
+}
+.ctp-legend-swatch { width: 12px; height: 8px; border-radius: 1px; }
+.ctp-stats {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--border); border: 1px solid var(--border);
+  margin-top: 48px;
+}
+.ctp-stat { background: var(--white); padding: 28px 24px; }
+.ctp-stat-label {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--mid); margin-bottom: 12px;
+}
+.ctp-stat-val {
+  font-size: 38px; font-weight: 300; line-height: 1; color: var(--black);
+}
+.ctp-stat-sub {
+  font-size: 11px; color: var(--mid); margin-top: 8px; line-height: 1.5;
+}
+
 /* ── DOUBLE MATERIALITY MATRIX ── */
 .materiality-matrix-block {
   margin-top: 80px;
@@ -1128,7 +1289,7 @@ footer { background: var(--black); padding: 72px 80px 40px; color: #fff; }
 <div class="dot-divider"><span>· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</span></div>
 
 <!-- ── PART 02 DIVIDER: Creating Tomorrow ── -->
-<section class="part-divider" id="part-2">
+<section class="part-divider creating-tomorrow-anchor" id="part-2">
   <div class="part-divider-inner fade-up">
     <span class="part-num">02</span>
     <span class="part-eyebrow" data-pt="Castro Group" data-en="Castro Group">Castro Group</span>
@@ -1136,6 +1297,264 @@ footer { background: var(--black); padding: 72px 80px 40px; color: #fff; }
     <p class="part-sub" data-pt="Para onde vamos — estratégia de certificação, plano de transição climática e os compromissos para 2026 e além. Os alicerces do futuro que estamos a construir." data-en="Where we are going — certification strategy, climate transition plan and commitments for 2026 and beyond. The foundations of the future we are building.">Para onde vamos — estratégia de certificação, plano de transição climática e os compromissos para 2026 e além. Os alicerces do futuro que estamos a construir.</p>
   </div>
 </section>
+
+<!-- ── CLIMATE TRANSITION PLAN ── -->
+<section id="climate-plan">
+  <div class="section-wrap">
+    <p class="section-eyebrow fade-up" data-pt="Plano de Transição Climática" data-en="Climate Transition Plan">Plano de Transição Climática</p>
+    <h2 class="section-heading fade-up" data-pt="Trajetória de redução<br><strong>de emissões até 2030</strong>" data-en="Emissions reduction<br><strong>trajectory to 2030</strong>">Trajetória de redução<br><strong>de emissões até 2030</strong></h2>
+
+    <div class="ctp-grid fade-up">
+      <div class="ctp-intro">
+        <p data-pt="O Castro Group assumiu o compromisso de reduzir 40% das emissões diretas (Scope 1+2) até 2030, tomando como ano-base 2024. Esta meta posiciona o Grupo em linha com o roteiro de descarbonização do setor imobiliário e com os objetivos da União Europeia para 2030." data-en="Castro Group is committed to reducing direct emissions (Scope 1+2) by 40% by 2030, with 2024 as the baseline year. This target aligns the Group with the real estate sector's decarbonisation roadmap and EU 2030 objectives.">O Castro Group assumiu o compromisso de reduzir 40% das emissões diretas (Scope 1+2) até 2030, tomando como ano-base 2024. Esta meta posiciona o Grupo em linha com o roteiro de descarbonização do setor imobiliário e com os objetivos da União Europeia para 2030.</p>
+        <p data-pt="Em 2025, atingimos uma redução de 25% face ao ano-base — um resultado que coloca o Grupo acima da trajetória linear esperada e demonstra a tração das alavancas de transformação em curso." data-en="In 2025, we achieved a 25% reduction vs the baseline year — a result that places the Group ahead of the expected linear trajectory and demonstrates the traction of ongoing transformation levers.">Em 2025, atingimos uma redução de 25% face ao ano-base — um resultado que coloca o Grupo acima da trajetória linear esperada e demonstra a tração das alavancas de transformação em curso.</p>
+        <div class="ctp-tag-row">
+          <span class="ctp-tag" data-pt="Eletrificação da frota" data-en="Fleet electrification">Eletrificação da frota</span>
+          <span class="ctp-tag" data-pt="Energia renovável on-site" data-en="On-site renewables">Energia renovável on-site</span>
+          <span class="ctp-tag" data-pt="Contratos de energia verde" data-en="Green energy contracts">Contratos de energia verde</span>
+          <span class="ctp-tag" data-pt="Eficiência operacional" data-en="Operational efficiency">Eficiência operacional</span>
+          <span class="ctp-tag" data-pt="Substituição de gasóleo em obra" data-en="Site diesel phase-out">Substituição de gasóleo em obra</span>
+        </div>
+      </div>
+
+      <div class="ctp-chart-wrap">
+        <svg class="ctp-chart-svg" viewBox="0 0 700 280" preserveAspectRatio="none" aria-label="Emissions reduction trajectory">
+          <!-- Y-axis grid lines -->
+          <line x1="40" y1="20"  x2="690" y2="20"  stroke="#e2e0da" stroke-width="1"/>
+          <line x1="40" y1="80"  x2="690" y2="80"  stroke="#e2e0da" stroke-width="1"/>
+          <line x1="40" y1="140" x2="690" y2="140" stroke="#e2e0da" stroke-width="1"/>
+          <line x1="40" y1="200" x2="690" y2="200" stroke="#e2e0da" stroke-width="1"/>
+          <line x1="40" y1="240" x2="690" y2="240" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- Y-axis ticks (TonCO₂e) -->
+          <text x="34" y="24"  text-anchor="end" font-size="9" fill="#6b7280" font-family="Helvetica,Arial">300</text>
+          <text x="34" y="84"  text-anchor="end" font-size="9" fill="#6b7280" font-family="Helvetica,Arial">200</text>
+          <text x="34" y="144" text-anchor="end" font-size="9" fill="#6b7280" font-family="Helvetica,Arial">100</text>
+          <text x="34" y="204" text-anchor="end" font-size="9" fill="#6b7280" font-family="Helvetica,Arial">0</text>
+
+          <!-- Target dotted line at 114.8 TonCO₂e (114.8/300 * 220 = 84.2 → y = 240 - 84 = 156) -->
+          <line x1="40" y1="156" x2="690" y2="156" stroke="#00b86e" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <text x="685" y="150" text-anchor="end" font-size="9" font-weight="700" fill="#00b86e" font-family="Helvetica,Arial">META 2030 · ≤114,8</text>
+
+          <!-- Bars: 7 years × 90px wide gap, starting x=70 -->
+          <!-- 2024: 264.9 → 240 - (264.9/300)*220 = 240 - 194.3 = 45.7 → height = 240-46 = 194 -->
+          <rect x="70"  y="46"  width="60" height="194" fill="#9e8fd4" rx="2"/>
+          <text x="100" y="38" text-anchor="middle" font-size="10" font-weight="700" fill="#1a1a1a" font-family="Helvetica,Arial">264,9</text>
+          <text x="100" y="258" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">2024</text>
+
+          <!-- 2025: 197.9 → y = 240 - (197.9/300)*220 = 240 - 145.1 = 94.9 -->
+          <rect x="160" y="95"  width="60" height="145" fill="#9e8fd4" rx="2"/>
+          <text x="190" y="87" text-anchor="middle" font-size="10" font-weight="700" fill="#1a1a1a" font-family="Helvetica,Arial">197,9</text>
+          <text x="190" y="258" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">2025 ✓</text>
+
+          <!-- 2026: ~180 → y = 240 - 132 = 108 -->
+          <rect x="250" y="108" width="60" height="132" fill="#00adb8" rx="2" opacity="0.85"/>
+          <text x="280" y="100" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">≈180</text>
+          <text x="280" y="258" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">2026</text>
+
+          <!-- 2027: ~163 → y = 240 - 119.5 = 120.5 -->
+          <rect x="340" y="120" width="60" height="120" fill="#00adb8" rx="2" opacity="0.85"/>
+          <text x="370" y="112" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">≈163</text>
+          <text x="370" y="258" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">2027</text>
+
+          <!-- 2028: ~147 → y = 240 - 107.8 = 132 -->
+          <rect x="430" y="132" width="60" height="108" fill="#00adb8" rx="2" opacity="0.85"/>
+          <text x="460" y="124" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">≈147</text>
+          <text x="460" y="258" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">2028</text>
+
+          <!-- 2029: ~131 → y = 240 - 96 = 144 -->
+          <rect x="520" y="144" width="60" height="96"  fill="#00adb8" rx="2" opacity="0.85"/>
+          <text x="550" y="136" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">≈131</text>
+          <text x="550" y="258" text-anchor="middle" font-size="10" fill="#6b7280" font-family="Helvetica,Arial">2029</text>
+
+          <!-- 2030 target: 114.8 → y = 240 - 84.2 = 155.8 -->
+          <rect x="610" y="156" width="60" height="84"  fill="#00b86e" rx="2"/>
+          <text x="640" y="148" text-anchor="middle" font-size="10" font-weight="700" fill="#00b86e" font-family="Helvetica,Arial">114,8</text>
+          <text x="640" y="258" text-anchor="middle" font-size="10" font-weight="700" fill="#00b86e" font-family="Helvetica,Arial">2030</text>
+        </svg>
+        <div class="ctp-chart-legend">
+          <span class="ctp-legend-item"><span class="ctp-legend-swatch" style="background:#9e8fd4"></span><span data-pt="Histórico (2024–2025)" data-en="Historical (2024–2025)">Histórico (2024–2025)</span></span>
+          <span class="ctp-legend-item"><span class="ctp-legend-swatch" style="background:#00adb8;opacity:0.85"></span><span data-pt="Trajetória prevista" data-en="Planned trajectory">Trajetória prevista</span></span>
+          <span class="ctp-legend-item"><span class="ctp-legend-swatch" style="background:#00b86e"></span><span data-pt="Meta 2030" data-en="2030 target">Meta 2030</span></span>
+          <span class="ctp-legend-item"><span class="ctp-legend-swatch" style="background:transparent;border-top:1.5px dashed #00b86e;height:2px;margin-top:3px;"></span><span data-pt="Linha de meta · TonCO₂e" data-en="Target line · TonCO₂e">Linha de meta · TonCO₂e</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ctp-stats stagger">
+      <div class="ctp-stat">
+        <div class="ctp-stat-label" data-pt="Ano-base · 2024" data-en="Baseline · 2024">Ano-base · 2024</div>
+        <div class="ctp-stat-val">264,9 <span style="font-size:14px;color:var(--mid);">TonCO₂e</span></div>
+        <div class="ctp-stat-sub" data-pt="Scope 1: 167,6 · Scope 2: 97,3" data-en="Scope 1: 167.6 · Scope 2: 97.3">Scope 1: 167,6 · Scope 2: 97,3</div>
+      </div>
+      <div class="ctp-stat">
+        <div class="ctp-stat-label" style="color:var(--cyan);" data-pt="Atual · 2025" data-en="Current · 2025">Atual · 2025</div>
+        <div class="ctp-stat-val">197,9 <span style="font-size:14px;color:var(--mid);">TonCO₂e</span></div>
+        <div class="ctp-stat-sub" style="color:var(--cyan);font-weight:600;" data-pt="↓ 25% vs 2024 — acima da trajetória linear" data-en="↓ 25% vs 2024 — ahead of linear trajectory">↓ 25% vs 2024 — acima da trajetória linear</div>
+      </div>
+      <div class="ctp-stat">
+        <div class="ctp-stat-label" style="color:var(--green);" data-pt="Meta · 2030" data-en="Target · 2030">Meta · 2030</div>
+        <div class="ctp-stat-val">≤114,8 <span style="font-size:14px;color:var(--mid);">TonCO₂e</span></div>
+        <div class="ctp-stat-sub" style="color:var(--green);font-weight:600;" data-pt="↓ 40% face a 2024" data-en="↓ 40% vs 2024">↓ 40% face a 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- dot divider -->
+<div class="dot-divider"><span>· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</span></div>
+
+<!-- ── CERTIFICATION STRATEGY ── -->
+<section id="certification-strategy">
+  <div class="section-wrap">
+    <p class="section-eyebrow fade-up" data-pt="Estratégia de Certificação" data-en="Certification Strategy">Estratégia de Certificação</p>
+    <h2 class="section-heading fade-up" data-pt="Edifícios certificados<br><strong>como prova de qualidade</strong>" data-en="Certified buildings<br><strong>as proof of quality</strong>">Edifícios certificados<br><strong>como prova de qualidade</strong></h2>
+
+    <!-- Summary cards -->
+    <div class="cs-summary fade-up">
+      <div class="cs-summary-card">
+        <div class="cs-summary-tag" style="background:#d4f7e7;color:#007a4a;" data-pt="Cobertura" data-en="Coverage">Cobertura</div>
+        <div class="cs-summary-num">95,8<span class="u">%</span></div>
+        <div class="cs-summary-lbl" data-pt="GFA com estratégia de certificação (257.050 m²)" data-en="GFA with certification strategy (257,050 m²)">GFA com estratégia de certificação (257.050 m²)</div>
+      </div>
+      <div class="cs-summary-card">
+        <div class="cs-summary-tag" style="background:#d4f7e7;color:#007a4a;" data-pt="Emitido" data-en="Issued">Emitido</div>
+        <div class="cs-summary-num">1</div>
+        <div class="cs-summary-lbl" data-pt="Certificado emitido em 2025 (BUZ — LEED)" data-en="Certificate issued in 2025 (BUZ — LEED)">Certificado emitido em 2025 (BUZ — LEED)</div>
+      </div>
+      <div class="cs-summary-card">
+        <div class="cs-summary-tag" style="background:rgba(0,173,184,0.15);color:var(--cyan);" data-pt="Em Curso" data-en="In Progress">Em Curso</div>
+        <div class="cs-summary-num">2</div>
+        <div class="cs-summary-lbl" data-pt="Certificações em fase final (SPARK + The Breeze)" data-en="Certifications in final phase (SPARK + The Breeze)">Certificações em fase final (SPARK + The Breeze)</div>
+      </div>
+      <div class="cs-summary-card">
+        <div class="cs-summary-tag" style="background:rgba(158,143,212,0.18);color:var(--purple);" data-pt="Planeado" data-en="Planned">Planeado</div>
+        <div class="cs-summary-num">5+</div>
+        <div class="cs-summary-lbl" data-pt="Ativos com objetivo de certificar até 2029" data-en="Assets with certification objective to 2029">Ativos com objetivo de certificar até 2029</div>
+      </div>
+    </div>
+
+    <!-- Frameworks pursued -->
+    <div class="fade-up" style="margin-bottom:32px;">
+      <div style="font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);margin-bottom:14px;" data-pt="Referenciais de Certificação" data-en="Certification Frameworks">Referenciais de Certificação</div>
+      <div class="cs-frameworks">
+        <span class="cs-fw active">LEED</span>
+        <span class="cs-fw active">WELL</span>
+        <span class="cs-fw active">WiredScore</span>
+        <span class="cs-fw active">SmartScore</span>
+      </div>
+    </div>
+
+    <!-- Project timeline -->
+    <div class="cs-timeline fade-up">
+      <div class="cs-timeline-head">
+        <div></div>
+        <div class="cs-years">
+          <div class="cs-year">2025</div>
+          <div class="cs-year">2026</div>
+          <div class="cs-year">2027</div>
+          <div class="cs-year">2028</div>
+          <div class="cs-year">2029</div>
+        </div>
+      </div>
+
+      <!-- BUZ -->
+      <div class="cs-row">
+        <div class="cs-row-label">BUZ
+          <span class="cs-row-meta" data-pt="Matosinhos · 1.660 m² · Escritório" data-en="Matosinhos · 1,660 m² · Office">Matosinhos · 1.660 m² · Escritório</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar achieved" style="left:0%;width:14%;">✓ LEED</div>
+          <div class="cs-bar operation" style="left:14%;width:86%;" data-pt="Operação certificada" data-en="Certified operation">Operação ✓</div>
+        </div>
+      </div>
+
+      <!-- SPARK -->
+      <div class="cs-row">
+        <div class="cs-row-label">SPARK
+          <span class="cs-row-meta" data-pt="Matosinhos · 17.934 m² · Escritórios" data-en="Matosinhos · 17,934 m² · Offices">Matosinhos · 17.934 m² · Escritórios</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar construction" style="left:0%;width:18%;" data-pt="Construção" data-en="Construction">Construção</div>
+          <div class="cs-bar certification" style="left:18%;width:18%;">LEED+WELL+WS+SS</div>
+          <div class="cs-bar operation" style="left:36%;width:64%;" data-pt="Operação" data-en="Operation">Operação</div>
+        </div>
+      </div>
+
+      <!-- The Breeze -->
+      <div class="cs-row">
+        <div class="cs-row-label">The Breeze
+          <span class="cs-row-meta" data-pt="V. N. de Gaia · 11.147 m² · Residencial" data-en="V. N. de Gaia · 11,147 m² · Residential">V. N. de Gaia · 11.147 m² · Residencial</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar construction" style="left:0%;width:30%;" data-pt="Construção" data-en="Construction">Construção</div>
+          <div class="cs-bar certification" style="left:30%;width:14%;">LEED</div>
+          <div class="cs-bar operation" style="left:44%;width:56%;" data-pt="Operação" data-en="Operation">Operação</div>
+        </div>
+      </div>
+
+      <!-- Valpark -->
+      <div class="cs-row">
+        <div class="cs-row-label">Valpark
+          <span class="cs-row-meta" data-pt="Valongo · 13.200 m² · Logística" data-en="Valongo · 13,200 m² · Logistics">Valongo · 13.200 m² · Logística</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar construction" style="left:0%;width:22%;" data-pt="Construção" data-en="Construction">Construção</div>
+          <div class="cs-bar objective" style="left:22%;width:18%;" data-pt="Objetivo" data-en="Objective">Objetivo</div>
+          <div class="cs-bar operation" style="left:40%;width:60%;" data-pt="Operação" data-en="Operation">Operação</div>
+        </div>
+      </div>
+
+      <!-- Palacete 31 de Janeiro -->
+      <div class="cs-row">
+        <div class="cs-row-label">Palacete 31 de Janeiro
+          <span class="cs-row-meta" data-pt="Braga · 1.207 m² · Escritório" data-en="Braga · 1,207 m² · Office">Braga · 1.207 m² · Escritório</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar operation" style="left:0%;width:35%;" data-pt="Operação" data-en="Operation">Em operação</div>
+          <div class="cs-bar objective" style="left:35%;width:20%;" data-pt="Cert. objetivo" data-en="Cert. objective">Objetivo</div>
+          <div class="cs-bar operation" style="left:55%;width:45%;" data-pt="Operação certificada" data-en="Certified operation">Operação ✓</div>
+        </div>
+      </div>
+
+      <!-- Villa Bloom -->
+      <div class="cs-row">
+        <div class="cs-row-label">Villa Bloom
+          <span class="cs-row-meta" data-pt="Loulé · 19.095 m² · Residencial" data-en="Loulé · 19,095 m² · Residential">Loulé · 19.095 m² · Residencial</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar project" style="left:0%;width:24%;" data-pt="Projeto" data-en="Project">Projeto</div>
+          <div class="cs-bar construction" style="left:24%;width:40%;" data-pt="Construção" data-en="Construction">Construção</div>
+          <div class="cs-bar objective" style="left:64%;width:18%;" data-pt="Cert." data-en="Cert.">Objetivo</div>
+        </div>
+      </div>
+
+      <!-- Fuse Valley -->
+      <div class="cs-row">
+        <div class="cs-row-label">Fuse Valley
+          <span class="cs-row-meta" data-pt="Matosinhos · 95.000 m² · Escritórios/Comércio" data-en="Matosinhos · 95,000 m² · Offices/Retail">Matosinhos · 95.000 m² · Escritórios</span>
+        </div>
+        <div class="cs-track">
+          <div class="cs-bar project" style="left:0%;width:32%;" data-pt="Projeto" data-en="Project">Projeto / Master plan</div>
+          <div class="cs-bar construction" style="left:32%;width:50%;" data-pt="Construção faseada" data-en="Phased construction">Construção faseada</div>
+          <div class="cs-bar objective" style="left:82%;width:18%;" data-pt="Cert." data-en="Cert.">Objetivo</div>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="cs-legend">
+        <span class="cs-legend-item"><span class="cs-legend-swatch" style="background:var(--lavender)"></span><span data-pt="Projeto / Planeamento" data-en="Project / Planning">Projeto / Planeamento</span></span>
+        <span class="cs-legend-item"><span class="cs-legend-swatch" style="background:var(--cyan)"></span><span data-pt="Construção" data-en="Construction">Construção</span></span>
+        <span class="cs-legend-item"><span class="cs-legend-swatch" style="background:var(--green)"></span><span data-pt="Certificação" data-en="Certification">Certificação</span></span>
+        <span class="cs-legend-item"><span class="cs-legend-swatch" style="background:transparent;border:1.5px dashed var(--green);"></span><span data-pt="Objetivo de certificar" data-en="Certification objective">Objetivo de certificar</span></span>
+        <span class="cs-legend-item"><span class="cs-legend-swatch" style="background:var(--mid);opacity:0.4;"></span><span data-pt="Operação" data-en="Operation">Operação</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- dot divider -->
+<div class="dot-divider"><span>· · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · ·</span></div>
 
 <!-- ── FUTURE / GOALS ── -->
 <section id="future">
